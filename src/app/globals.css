@@ -1,0 +1,298 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), "Segoe UI", system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+
+  /* Sampled from the 2026 presentation video and the IBM letterhead, so the
+     site and the video read as one piece. */
+  --color-peru: #700001;
+  --color-peru-deep: #4a0001;
+  --color-peru-bright: #a81f23;
+  --color-peru-soft: #8d1f20;
+
+  --color-cream: #f3f3eb;
+  --color-parchment: #faf9f4;
+  --color-parchment-warm: #f7f4ea;
+
+  --color-slate-ink: #2b4250;
+  --color-ink: #1d2b35;
+  --color-body: #33414c;
+  --color-muted: #6d7a85;
+  --color-hairline: #ddd8cc;
+
+  /* The warm off-white the video sets type in, over red. */
+  --color-candle: #f0e6cf;
+  --color-candle-dim: #cbb894;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    background: var(--color-parchment);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Kept inside @layer base so Tailwind text-* utilities still win on links. */
+  a {
+    color: inherit;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--color-peru);
+    color: var(--color-candle);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-peru-bright);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .section-pad {
+    padding-block: clamp(4rem, 7.5vw, 6.75rem);
+  }
+
+  .shell {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 76rem;
+    padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  .shell-narrow {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 46rem;
+    padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  /* Display type. Cormorant runs small and light, so it gets tighter leading
+     and a nudge more weight than a default serif would. */
+  .display {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.06;
+    letter-spacing: -0.012em;
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+
+  .display-lg {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(2.6rem, 6.2vw, 4.6rem);
+    line-height: 1.02;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+
+  .display-md {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(1.95rem, 3.6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.014em;
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+
+  .display-sm {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+
+  /* On red bands the ink colour must be overridden explicitly — a dark heading
+     on a dark band is the classic failure. */
+  .on-red .display,
+  .on-red .display-md,
+  .on-red .display-sm,
+  .on-red .display-lg {
+    color: var(--color-candle);
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-peru-bright);
+  }
+
+  .on-red .eyebrow {
+    color: var(--color-candle-dim);
+  }
+
+  .lede {
+    font-size: clamp(1.06rem, 1.5vw, 1.22rem);
+    line-height: 1.66;
+    color: var(--color-body);
+  }
+
+  .on-red .lede,
+  .on-red p {
+    color: color-mix(in srgb, var(--color-candle) 84%, transparent);
+  }
+
+  .prose-field p {
+    line-height: 1.75;
+    margin-block-end: 1.15em;
+  }
+
+  .prose-field p:last-child {
+    margin-block-end: 0;
+  }
+
+  /* The Peru flag as a hairline: red / white / red. Used as a section rule. */
+  .flag-rule {
+    display: block;
+    height: 3px;
+    width: 4.5rem;
+    background: linear-gradient(
+      to right,
+      var(--color-peru) 0 33.333%,
+      var(--color-cream) 33.333% 66.666%,
+      var(--color-peru) 66.666% 100%
+    );
+  }
+
+  .on-red .flag-rule {
+    background: linear-gradient(
+      to right,
+      var(--color-candle) 0 33.333%,
+      color-mix(in srgb, var(--color-candle) 30%, transparent) 33.333% 66.666%,
+      var(--color-candle) 66.666% 100%
+    );
+  }
+
+  /* Thin vertical/horizontal keylines, the video's signature device. */
+  .keyline {
+    border-left: 1px solid color-mix(in srgb, var(--color-candle) 38%, transparent);
+    padding-left: clamp(1.25rem, 3vw, 2.25rem);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.9rem 1.7rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border: 1px solid transparent;
+    transition: background-color 160ms ease, color 160ms ease,
+      border-color 160ms ease, transform 160ms ease;
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+  .btn-primary {
+    background: var(--color-peru);
+    color: var(--color-candle);
+  }
+
+  .btn-primary:hover {
+    background: var(--color-peru-deep);
+  }
+
+  .btn-candle {
+    background: var(--color-candle);
+    color: var(--color-peru-deep);
+  }
+
+  .btn-candle:hover {
+    background: #fff;
+  }
+
+  .btn-outline {
+    border-color: var(--color-hairline);
+    color: var(--color-ink);
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--color-peru);
+    color: var(--color-peru);
+  }
+
+  .on-red .btn-outline {
+    border-color: color-mix(in srgb, var(--color-candle) 45%, transparent);
+    color: var(--color-candle);
+  }
+
+  .on-red .btn-outline:hover {
+    border-color: var(--color-candle);
+    background: color-mix(in srgb, var(--color-candle) 12%, transparent);
+    color: var(--color-candle);
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--color-hairline);
+  }
+
+  .field-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin-block-end: 0.45rem;
+  }
+
+  .field-input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    background: #fff;
+    border: 1px solid var(--color-hairline);
+    color: var(--color-ink);
+  }
+
+  .field-input:focus {
+    border-color: var(--color-peru);
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-peru) 12%, transparent);
+  }
+
+  .field-input::placeholder {
+    color: #a4adb5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
