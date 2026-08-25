@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PhoneLink } from "@/components/PhoneLink";
+import { Wordmark } from "@/components/Wordmark";
 import { nav, site } from "@/lib/site";
 
 export function Footer() {
@@ -8,16 +8,10 @@ export function Footer() {
     <footer className="on-red bg-peru-deep text-candle">
       <div className="shell grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <Image
-            src="/ibm-logo.png"
-            alt="Independent Baptist Missions"
-            width={1400}
-            height={595}
-            className="h-10 w-auto brightness-0 invert"
-          />
+          <Wordmark tone="candle" />
           <p className="mt-5 max-w-sm text-[0.95rem] leading-relaxed">
-            {site.name} — {site.tagline}. A ministry of {site.homeChurch} (
-            {site.homeChurchEs}), {site.homeChurchCity}.
+            Sent out of {site.homeChurch} ({site.homeChurchEs}),{" "}
+            {site.homeChurchCity}, and laboring across Peru.
           </p>
           <p className="mt-5 font-serif text-[1.05rem] italic leading-snug text-candle/85">
             “{site.verse.text}”
@@ -88,7 +82,7 @@ export function Footer() {
       <div className="border-t border-candle/15">
         <div className="shell flex flex-col gap-2 py-6 text-[0.8rem] text-candle/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.org}. All rights reserved.
+            © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
           <p>Villa El Salvador · Pachacámac · Tarapoto</p>
         </div>

@@ -56,7 +56,7 @@ export function PlantingInitiative() {
       <figure className="m-0">
         <Image
           src="/photos/map-church-planting.jpg"
-          alt="IBM Church Planting Initiative 2026–2028 map of Peru, with eleven locations colour-coded by whether a church is established, started, or planned and whether land has been secured"
+          alt="Church Planting Initiative 2026–2028 map of Peru, with eleven locations colour-coded by whether a church is established, started, or planned and whether land has been secured"
           width={1312}
           height={1600}
           sizes="(min-width: 1024px) 420px, 92vw"

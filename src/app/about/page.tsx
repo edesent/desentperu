@@ -124,10 +124,10 @@ export default function AboutPage() {
               <ul className="mt-4 space-y-3 text-[0.93rem] leading-relaxed">
                 <li>
                   <strong className="font-semibold text-ink">
-                    {site.org}
+                    The missions work
                   </strong>{" "}
                   — a collaboration of independent Baptist churches supporting
-                  world evangelism.{" "}
+                  world evangelism, which we help administer.{" "}
                   <a
                     href={site.orgSite}
                     target="_blank"

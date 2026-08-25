@@ -7,32 +7,34 @@ import { partnerChurches, site, whyPeru } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Partner With Us",
   description:
-    "Support a Peruvian missionary for $40 a month, print a Bible for $3, or help finish the church building in Tarapoto. 100% of every gift goes to missionaries and scriptures.",
+    "Support a Peruvian missionary, help print scriptures, or help finish the church building in Tarapoto. 100% of every gift goes to missionaries and scriptures — give whatever the Lord leads.",
   alternates: { canonical: "/partner" },
 };
 
 /** Named needs, so a church can fund something specific rather than a fund. */
+/** We name the need, not a figure — what a church gives is between them and the
+    Lord. */
 const projects = [
   {
-    amount: "$40 / month",
-    name: "Support one Peruvian missionary",
+    tag: "Monthly support",
+    name: "Stand behind one Peruvian missionary",
     body:
-      "About 10% of a missionary's need — a real help, and small enough that his own dedication is proved. Support normally runs a three-year term, and every new church he starts extends it.",
+      "A portion of a missionary's need, so that the support is a real help while his own dedication is still proved. Support normally runs a three-year term, and every new church he starts extends it.",
   },
   {
-    amount: "$3 each",
-    name: "Print a Bible in Peru",
+    tag: "Scriptures",
+    name: "Help us print Bibles in Peru",
     body:
       "We publish in country. We produced a ton of New Testaments in the Awajún language for Amazon tribal communities in 2024 and another in 2025. The brethren are asking for more; our funds are low.",
   },
   {
-    amount: "Any amount",
+    tag: "Construction",
     name: "Finish the Tarapoto building",
     body:
       "The temple exterior is painted and the parsonage steel is up. The land is ours and the plans are done. We need added funds so construction can run without stopping — and a finished parsonage ends the rent.",
   },
   {
-    amount: "Any amount",
+    tag: "Evangelism",
     name: "The tent ministry",
     body:
       "Eight campaigns since December, across four regions. Brother Gibbs could use a helper and a vehicle to keep travelling Peru with the tent.",
@@ -54,12 +56,13 @@ export default function PartnerPage() {
     <>
       <PageHero
         eyebrow="Partner with us"
-        title={<>Forty dollars a month<br />supports a missionary.</>}
+        title={<>A tenth of the cost.<br />Ten times the reach.</>}
       >
         <p>
-          A Peruvian man can do effective missionary work for about a tenth of
+          A Peruvian man can do effective missionary work on a small fraction of
           what it costs to send an American. We are already there, we already
-          know these men, and the fields are already open.
+          know these men, and the fields are already open. Give whatever the
+          Lord lays on your church — there is no figure we are asking for.
         </p>
       </PageHero>
 
@@ -80,10 +83,8 @@ export default function PartnerPage() {
           <ul className="mt-12 grid gap-6 md:grid-cols-2">
             {projects.map((p) => (
               <li key={p.name} className="card flex flex-col p-7">
-                <p className="font-serif text-[1.7rem] leading-none text-peru">
-                  {p.amount}
-                </p>
-                <h3 className="display-sm mt-3">{p.name}</h3>
+                <p className="eyebrow">{p.tag}</p>
+                <h3 className="display-sm mt-3 text-[1.25rem]">{p.name}</h3>
                 <p className="mt-3 text-[0.93rem] leading-relaxed text-body">
                   {p.body}
                 </p>
@@ -166,10 +167,11 @@ export default function PartnerPage() {
             ))}
           </ul>
           <p className="mt-12 max-w-3xl text-[0.95rem] leading-relaxed">
-            {site.orgShort} is a clearinghouse: we filter and approve
-            missionaries we believe are very good investments for your
-            missionary support dollars. You can read the full standards we hold
-            them to at{" "}
+            We act as a clearinghouse: we filter and approve missionaries we
+            believe are very good investments for your missionary support
+            dollars. Gifts are received and disbursed through{" "}
+            {site.processedBy} — the name your church will see on the receipt.
+            You can read the full standards we hold our missionaries to at{" "}
             <a
               href={`${site.orgSite}/our-missionaries/`}
               target="_blank"
@@ -191,9 +193,9 @@ export default function PartnerPage() {
             <h2 className="display-md mt-4">Churches standing with us</h2>
             <span className="flag-rule mt-6" />
             <p className="lede mt-6">
-              Independent Baptist Missions is a collaboration of independent
-              Baptist churches that support world evangelism. If your church
-              joins, we would be glad to add your name here.
+              These are independent Baptist churches already supporting this
+              work and the Peruvian men we send. If your church joins them, we
+              would be glad to add your name here.
             </p>
           </div>
           <ul className="mt-10 grid gap-x-10 gap-y-1 border-t border-hairline pt-6 sm:grid-cols-2 lg:grid-cols-3">

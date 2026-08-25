@@ -44,7 +44,7 @@ export function GiveEmbed() {
     <div className="border border-hairline bg-white">
       <iframe
         src="https://donorbox.org/embed/independent-baptist-missions"
-        title="Give to Independent Baptist Missions"
+        title="Give to the mission work in Peru"
         name="donorbox"
         allow="payment"
         seamless

@@ -4,7 +4,7 @@
   --font-sans: var(--font-inter), "Segoe UI", system-ui, sans-serif;
   --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
 
-  /* Sampled from the 2026 presentation video and the IBM letterhead, so the
+  /* Sampled from the 2026 presentation video and their letterhead, so the
      site and the video read as one piece. */
   --color-peru: #700001;
   --color-peru-deep: #4a0001;

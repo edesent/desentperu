@@ -146,8 +146,9 @@ export default async function LetterPage({
           </h2>
           <p className="lede mx-auto mt-5 max-w-xl">
             We can present to your church live by video from Peru, or in person
-            during our September 2026 trip. And a Peruvian missionary can be
-            supported for $40 a month.
+            during our September 2026 trip. And your church can stand behind a
+            Peruvian missionary for a fraction of what sending an American
+            costs.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href="/schedule" className="btn btn-primary">

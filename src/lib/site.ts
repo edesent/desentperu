@@ -16,9 +16,10 @@ export const site = {
   tagline: "Missionary Workers in Peru",
   shortName: "Desent Peru",
   description:
-    "Nash and Suzanne Desent are independent Baptist missionaries in Lima, Peru, training and sending Peruvian missionaries to the Spanish-speaking world. Partner with them for $40 a month.",
-  org: "Independent Baptist Missions",
-  orgShort: "IBM",
+    "Nash and Suzanne Desent are independent Baptist missionaries in Lima, Peru, training and sending Peruvian missionaries to the Spanish-speaking world. Partner with them in prayer and support.",
+  /** The organisation gifts are processed through. Named on /partner only, so
+      a donor recognises it on the Donorbox receipt — it is not the site brand. */
+  processedBy: "Independent Baptist Missions",
   orgSite: "https://ibmperu.org",
   homeChurch: "Landmark Baptist Church",
   homeChurchEs: "Iglesia Bautista El Lindero Antiguo",
@@ -39,18 +40,18 @@ export const site = {
 /** Headline numbers. Each one is defensible from the report letter. */
 export const figures = [
   {
-    value: "$40",
-    unit: "a month",
-    label: "Supports a Peruvian missionary",
+    value: "A tenth",
+    unit: "of the cost",
+    label: "Of sending an American missionary",
     note:
-      "About 10% of his need — enough to be a real help, small enough that his dedication is proved.",
+      "Peruvian men are already home — no startup costs, no shipping, no language school. Many operate several works at once.",
   },
   {
-    value: "$3",
-    unit: "a Bible",
-    label: "Scriptures printed in Peru",
+    value: "2 tons",
+    unit: "of scriptures",
+    label: "New Testaments in Awajún",
     note:
-      "We publish in country, including New Testaments in the Awajún language for the Amazon.",
+      "Printed in country for Amazon tribal communities in 2024, and again in 2025. The brethren are asking for more.",
   },
   {
     value: "200,000",
@@ -108,7 +109,7 @@ export const works: Work[] = [
     summary:
       "The base church, the missions office, and where university classes are taught.",
     body: [
-      "The work of First Baptist Church of Pachacámac is going well. It is also the home office for Independent Baptist Missions and, this year, the place where Baptist International University classes are being taught in Peru.",
+      "The work of First Baptist Church of Pachacámac is going well. It is also our home office and, this year, the place where Baptist International University classes are being taught in Peru.",
       "We thank God for the Moreno family. Without their faithful support in labor, we could not do what we do. Please pray for this family.",
     ],
     photo: {
@@ -186,7 +187,7 @@ export const pillars = [
     es: "Semilla",
     heading: "The scriptures, printed in country",
     body:
-      "We are committed to publishing and distributing scriptures in Peru and South America. We produced a ton of New Testaments in the Awajún language for tribal communities in northern Peru in 2024, and another ton in 2025. The brethren are asking for more. We can print them here for about $3 a Bible — we have the ability to publish and distribute, but our funds are low.",
+      "We are committed to publishing and distributing scriptures in Peru and South America. We produced a ton of New Testaments in the Awajún language for tribal communities in northern Peru in 2024, and another ton in 2025. The brethren are asking for more. We can print them in country for a fraction of what they cost elsewhere — we have the ability to publish and distribute, but our funds are low.",
     since: "Bearing Precious Seed since 1996 in Honduras, and in Peru since 2016",
   },
   {
@@ -202,7 +203,7 @@ export const pillars = [
     es: "Enviadores",
     heading: "Churches sending, and churches multiplying",
     body:
-      "IBM is a clearinghouse: we filter and approve missionaries we believe are very good investments for your missionary support dollars. Pastor Desent personally screens each man and knows his work. We strive to plant a church every year, and we encourage every missionary and church we minister to to support two new missionaries every year — and to teach them to do the same.",
+      "We act as a clearinghouse: we filter and approve missionaries we believe are very good investments for your missionary support dollars. Nash personally screens each man and knows his work. We strive to plant a church every year, and we encourage every missionary and church we minister to to support two new missionaries every year — and to teach them to do the same.",
     since: "Over 35 years in missions, scriptures and training men",
   },
 ] as const;
@@ -238,7 +239,7 @@ export const plantingSites: {
     name: "Jauja",
     region: "Junín",
     status: "operatingWithLand",
-    note: "Partner church with IBM; has two missions of its own",
+    note: "A partner church; has two missions of its own",
   },
   { name: "Villa El Salvador", region: "Lima", status: "operatingNoLand" },
   { name: "Tarapoto", region: "San Martín", status: "startedWithLand" },
@@ -273,9 +274,9 @@ export const plans2026 = [
 /** Why a church might choose to support Peruvian missionaries specifically. */
 export const whyPeru = [
   {
-    heading: "Ten cents on the dollar",
+    heading: "A tenth of the cost",
     body:
-      "A Peruvian man can do effective missionary work for about 10% of an American missionary's monthly support. Many of them operate multiple works at once.",
+      "A Peruvian man can do effective missionary work on a small fraction of what an American missionary needs each month. Many of them operate multiple works at once.",
   },
   {
     heading: "Already home",
@@ -294,7 +295,7 @@ export const whyPeru = [
   },
 ];
 
-/** Churches already partnering with IBM, from ibmperu.org. */
+/** Churches already standing with the work, from ibmperu.org. */
 export const partnerChurches = [
   "Bellingham Bible Baptist Church — Bellingham, Massachusetts",
   "Bible Baptist Church — Central Falls, Rhode Island",

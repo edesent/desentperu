@@ -159,7 +159,7 @@ export const letters: Letter[] = [
       },
       {
         type: "p",
-        text: "We produced a ton of New Testaments in the Awajún language for tribal communities in northern Peru in 2024. We also published another ton in 2025. The brethren are asking for more Bibles. We can print them here for about $3 per Bible. Please pray for this. We have the ability to publish and distribute, but our funds are low.",
+        text: "We produced a ton of New Testaments in the Awajún language for tribal communities in northern Peru in 2024. We also published another ton in 2025. The brethren are asking for more Bibles. We can print them here very inexpensively. Please pray for this. We have the ability to publish and distribute, but our funds are low.",
       },
       {
         type: "p",
@@ -167,7 +167,7 @@ export const letters: Letter[] = [
       },
       {
         type: "p",
-        text: "Senders: supporting missions through our churches and IBM is always active, thanks to God. But we also do a lot of preaching and teaching in churches all over to encourage their support of missions. We strive to plant a church every year. We also encourage every missionary and church we minister to to support two new missionaries every year, and encourage them to do this also. IBM is a clearinghouse to filter and approve missionaries we believe are very good investments for your missionary support dollars.",
+        text: "Senders: supporting missions through our churches and our missions office is always active, thanks to God. But we also do a lot of preaching and teaching in churches all over to encourage their support of missions. We strive to plant a church every year. We also encourage every missionary and church we minister to to support two new missionaries every year, and encourage them to do this also. We act as a clearinghouse to filter and approve missionaries we believe are very good investments for your missionary support dollars.",
       },
       { type: "h", text: "Special blessings" },
       {

@@ -6,7 +6,24 @@ Its job is to get a pastor from "who is this?" to one of two actions:
 
 1. **Schedule a presentation** — usually a live video call from the field,
    because they are in Peru most of the year. This is the primary ask.
-2. **Support a missionary** — $40/month per Peruvian missionary, via Donorbox.
+2. **Support a missionary** — via Donorbox, with **no figure named**.
+
+The site is branded to **Nash and Suzanne themselves**, not to the missions
+organisation. There is no IBM logo and no IBM wordmark: the mark is their names
+plus the Peruvian flag bar (`src/components/Wordmark.tsx`, `src/app/icon.svg`).
+
+Two related rules, both deliberate:
+
+- **Never name a support amount.** No "$40/month", no "$3 a Bible". The
+  argument is made with ratios and weights instead — "a tenth of the cost",
+  "2 tons of scriptures" — and /partner says plainly that no figure is being
+  asked for. Needs are named as categories (Monthly support, Scriptures,
+  Construction, Evangelism), never as prices.
+- **Don't rebrand the site to the organisation.** Independent Baptist Missions
+  is named in exactly one place — the giving section of `/partner`, via
+  `site.processedBy` — so a church recognises the name on its Donorbox receipt.
+  That single mention is there for honesty about where money goes; everything
+  else speaks as Nash and Suzanne.
 
 The organisation's own site is [ibmperu.org](https://ibmperu.org); this site is
 personal to Nash and Suzanne and links out to it.
@@ -139,6 +156,20 @@ To launch:
 That one variable fixes robots, every canonical URL, and the sitemap at once.
 If the domain is **not** under `ibmperu.org`, update the `isDemo` regex to match
 whatever it is, or the site will stay noindexed.
+
+## Wording changed from the source material
+
+Eli asked for **no dollar amounts** and **no IBM branding**. Two places where
+that meant editing text that was originally Nash's own:
+
+- The May 2026 letter said *"We can print them here for about $3 per Bible"* →
+  now *"very inexpensively"*.
+- The same letter said *"IBM is a clearinghouse…"* and *"through our churches
+  and IBM"* → now *"We act as a clearinghouse…"* and *"our missions office"*.
+
+**The downloadable PDF still contains the original wording**, since it is the
+document as it was actually sent. If the letter should read verbatim instead,
+revert those three strings in `src/lib/letters.ts`.
 
 ## Facts to confirm with Nash before launch
 

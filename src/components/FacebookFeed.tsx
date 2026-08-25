@@ -29,7 +29,7 @@ export function FacebookFeed() {
       {loaded ? (
         <iframe
           src={src}
-          title="Facebook posts from Independent Baptist Missions Peru"
+          title="Facebook posts from the mission work in Peru"
           scrolling="no"
           frameBorder={0}
           allow="encrypted-media"

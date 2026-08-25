@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Wordmark } from "@/components/Wordmark";
 import { useEffect, useState } from "react";
 import { nav } from "@/lib/site";
 
@@ -36,21 +36,8 @@ export function Navbar() {
       }`}
     >
       <div className="shell flex h-[72px] items-center justify-between gap-6">
-        <Link href="/" className="flex shrink-0 items-center gap-3">
-          <Image
-            src="/ibm-logo.png"
-            alt="Independent Baptist Missions"
-            width={1400}
-            height={595}
-            priority
-            className="h-8 w-auto sm:h-9"
-          />
-          <span className="hidden border-l border-hairline pl-3 text-[0.78rem] leading-tight text-muted sm:block">
-            Nash &amp; Suzanne Desent
-            <span className="block text-[0.7rem] tracking-wide text-peru-bright">
-              Missionaries to Peru
-            </span>
-          </span>
+        <Link href="/" className="shrink-0" aria-label="Nash & Suzanne Desent — home">
+          <Wordmark />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">

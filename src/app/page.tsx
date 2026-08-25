@@ -34,9 +34,10 @@ export default function HomePage() {
             <p className="lede mt-7 max-w-xl">
               We are Nash and Suzanne Desent, and we have spent our lives
               putting scriptures and trained Peruvian preachers into places
-              that have neither. A Peruvian missionary can be supported for{" "}
+              that have neither. These are men who can reach their own people
+              for{" "}
               <strong className="font-semibold text-candle">
-                $40 a month
+                a fraction of what it costs to send an American
               </strong>
               . Would your church stand with one?
             </p>

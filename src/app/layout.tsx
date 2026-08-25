@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   description: site.description,
   authors: [{ name: site.name }],
   creator: site.name,
-  publisher: site.org,
+  publisher: site.name,
   alternates: { canonical: "/" },
   openGraph: {
     title: `${site.name} — ${site.tagline}`,
@@ -66,11 +66,6 @@ export const metadata: Metadata = {
         googleBot: { index: true, follow: true, "max-image-preview": "large" },
       },
   category: "religion",
-  icons: {
-    icon: [{ url: "/ibm-logo-512.png", type: "image/png" }],
-    shortcut: ["/ibm-logo-512.png"],
-    apple: ["/ibm-logo-512.png"],
-  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
