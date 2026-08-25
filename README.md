@@ -17,8 +17,10 @@ Two related rules, both deliberate:
 - **Never name a support amount.** No "$40/month", no "$3 a Bible". The
   argument is made with ratios and weights instead — "a tenth of the cost",
   "2 tons of scriptures" — and /partner says plainly that no figure is being
-  asked for. Needs are named as categories (Monthly support, Scriptures,
-  Construction, Evangelism), never as prices.
+  asked for. **And giving is not itemised.** /partner describes what a gift
+  supports as a plain list, but offers a single custom amount — no fund
+  buttons, no per-project tiers, nothing to designate. `supports` in
+  `src/app/partner/page.tsx` is prose about the work, not a set of options.
 - **Don't rebrand the site to the organisation.** Independent Baptist Missions
   is named in exactly one place — the giving section of `/partner`, via
   `site.processedBy` — so a church recognises the name on its Donorbox receipt.

@@ -13,10 +13,11 @@ export function GiveEmbed() {
   if (!loaded) {
     return (
       <div className="border border-hairline bg-white p-8 text-center sm:p-10">
-        <h3 className="display-sm text-[1.2rem]">Give online</h3>
+        <h3 className="display-sm text-[1.2rem]">Give any amount</h3>
         <p className="mx-auto mt-3 max-w-md text-[0.93rem] leading-relaxed text-muted">
-          Secure giving through Donorbox — one-time or monthly. 100% of every
-          gift goes to missionaries and to the scriptures; our home church bears
+          Secure giving through Donorbox — one-time or monthly, in whatever
+          amount you choose. There are no set levels and nothing to designate.
+          100% goes to missionaries and to the scriptures; our home church bears
           the administration costs.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">

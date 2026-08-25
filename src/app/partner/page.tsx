@@ -11,34 +11,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "/partner" },
 };
 
-/** Named needs, so a church can fund something specific rather than a fund. */
-/** We name the need, not a figure — what a church gives is between them and the
-    Lord. */
-const projects = [
-  {
-    tag: "Monthly support",
-    name: "Stand behind one Peruvian missionary",
-    body:
-      "A portion of a missionary's need, so that the support is a real help while his own dedication is still proved. Support normally runs a three-year term, and every new church he starts extends it.",
-  },
-  {
-    tag: "Scriptures",
-    name: "Help us print Bibles in Peru",
-    body:
-      "We publish in country. We produced a ton of New Testaments in the Awajún language for Amazon tribal communities in 2024 and another in 2025. The brethren are asking for more; our funds are low.",
-  },
-  {
-    tag: "Construction",
-    name: "Finish the Tarapoto building",
-    body:
-      "The temple exterior is painted and the parsonage steel is up. The land is ours and the plans are done. We need added funds so construction can run without stopping — and a finished parsonage ends the rent.",
-  },
-  {
-    tag: "Evangelism",
-    name: "The tent ministry",
-    body:
-      "Eight campaigns since December, across four regions. Brother Gibbs could use a helper and a vehicle to keep travelling Peru with the tent.",
-  },
+/**
+ * What one gift supports — described, not itemised. Deliberately NOT a set of
+ * fund buttons or price tiers: a church gives a single amount of its own
+ * choosing and it goes where the need is greatest.
+ */
+const supports = [
+  "Monthly support for Peruvian missionaries and their families",
+  "Printing and distributing scriptures in country, including New Testaments in the Awajún language for the Amazon",
+  "Church construction — the temple and parsonage in Tarapoto",
+  "The travelling tent ministry and its evangelistic campaigns",
+  "Training pastors, preachers and missionaries through the university",
+  "New church plants in Cacatachi, Lamas and the cities beyond them",
 ];
 
 /** From ibmperu.org — the terms a supporting church is agreeing to. */
@@ -66,28 +50,35 @@ export default function PartnerPage() {
         </p>
       </PageHero>
 
-      {/* What a gift actually does. */}
+      {/* What a gift supports — described, not itemised into funds. */}
       <section className="section-pad">
-        <div className="shell">
-          <div className="max-w-2xl">
+        <div className="shell grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
+          <div>
             <p className="eyebrow">Where it goes</p>
-            <h2 className="display-md mt-4">Choose something specific</h2>
+            <h2 className="display-md mt-4">What your gift supports</h2>
             <span className="flag-rule mt-6" />
-            <p className="lede mt-6">
-              100% of every monetary gift goes to supporting missionaries and to
-              the scriptures. We do not use funds for anything else — our home
-              church bears all administration costs.
-            </p>
+            <div className="prose-field lede mt-7">
+              <p>
+                100% of every monetary gift goes to supporting missionaries and
+                to the scriptures. We do not use funds for anything else — our
+                home church bears all administration costs.
+              </p>
+              <p className="!mb-0">
+                There is nothing to choose between and no figure we are asking
+                for. Give one amount, whatever the Lord lays on your church, and
+                it goes to the work that needs it most.
+              </p>
+            </div>
           </div>
 
-          <ul className="mt-12 grid gap-6 md:grid-cols-2">
-            {projects.map((p) => (
-              <li key={p.name} className="card flex flex-col p-7">
-                <p className="eyebrow">{p.tag}</p>
-                <h3 className="display-sm mt-3 text-[1.25rem]">{p.name}</h3>
-                <p className="mt-3 text-[0.93rem] leading-relaxed text-body">
-                  {p.body}
-                </p>
+          <ul className="divide-y divide-hairline border-y border-hairline">
+            {supports.map((item) => (
+              <li key={item} className="flex gap-4 py-4">
+                <span
+                  aria-hidden
+                  className="mt-[0.62rem] h-1.5 w-1.5 shrink-0 bg-peru"
+                />
+                <span className="text-[0.98rem] leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -99,7 +90,7 @@ export default function PartnerPage() {
         <div className="shell grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
           <div>
             <p className="eyebrow">How to give</p>
-            <h2 className="display-md mt-4">Two ways</h2>
+            <h2 className="display-md mt-4">Two ways to give</h2>
             <span className="flag-rule mt-6" />
             <div className="prose-field mt-7 text-[1rem]">
               <p>

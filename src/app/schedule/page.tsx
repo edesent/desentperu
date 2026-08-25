@@ -39,7 +39,7 @@ export default function SchedulePage() {
     <>
       <PageHero
         eyebrow="For pastors"
-        title={<>Let us bring the field<br />into your pulpit.</>}
+        title={<>Let us bring the field<br />into your church.</>}
       >
         <p>
           We are on the field in Peru, so most of the year we cannot stand in

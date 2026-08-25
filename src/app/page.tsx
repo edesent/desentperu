@@ -248,7 +248,7 @@ export default function HomePage() {
               <span className="flag-rule mt-6" />
               <p className="lede mt-6">
                 We are in Peru, and most of the year we cannot be in your
-                pulpit. So let us come in by video — a live presentation to
+                church. So let us come in by video — a live presentation to
                 your congregation, your missions committee, or just to you,
                 from the works themselves. No travel cost, no honorarium
                 expected, and you see the field as it actually is.

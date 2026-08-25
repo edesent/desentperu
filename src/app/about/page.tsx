@@ -99,15 +99,17 @@ export default function AboutPage() {
           <div className="space-y-8">
             <figure className="m-0">
               <Image
-                src="/photos/villa-congregation.jpg"
-                alt="The congregation of the church in Villa El Salvador gathered for a group photograph in the meeting hall"
-                width={880}
-                height={660}
+                src="/photos/nash-missions-conference.jpg"
+                alt="Nash Desent standing with two Peruvian preachers, all wearing red ties, in front of a hand-made “Misiones 2025” board displaying the flags of Bolivia, Uruguay, Peru and Honduras alongside photographs of the men serving in each field"
+                width={1560}
+                height={1030}
+                priority
                 sizes="(min-width: 1024px) 480px, 92vw"
                 className="h-auto w-full border border-hairline"
               />
               <figcaption className="mt-3 text-[0.82rem] text-muted">
-                The church in Villa El Salvador, where the work is anchored.
+                Nash with Peruvian brethren at a missions conference. The board
+                behind them names the fields and the men serving in each one.
               </figcaption>
             </figure>
             <div className="border border-hairline bg-white p-7">
