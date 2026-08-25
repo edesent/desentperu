@@ -16,7 +16,7 @@ export const site = {
   tagline: "Missionary Workers in Peru",
   shortName: "Desent Peru",
   description:
-    "Nash and Suzanne Desent are independent Baptist missionaries in Lima, Peru, training and sending Peruvian missionaries to the Spanish-speaking world. Partner with them in prayer and support.",
+    "Nash and Suzanne Desent are independent Baptist missionaries in Lima, Peru — planting churches, publishing scriptures, and training and sending Peruvian preachers. Put them on your church\u2019s missions budget.",
   /** The organisation gifts are processed through. Named on /partner only, so
       a donor recognises it on the Donorbox receipt — it is not the site brand. */
   processedBy: "Independent Baptist Missions",
@@ -40,11 +40,11 @@ export const site = {
 /** Headline numbers. Each one is defensible from the report letter. */
 export const figures = [
   {
-    value: "A tenth",
-    unit: "of the cost",
-    label: "Of sending an American missionary",
+    value: "35 years",
+    unit: "of ministry",
+    label: "Nash and Suzanne, still on the field",
     note:
-      "Peruvian men are already home — no startup costs, no shipping, no language school. Many operate several works at once.",
+      "A church founded and pastored in Rhode Island from 1991, and now a church, a home office and a university in Peru.",
   },
   {
     value: "2 tons",
@@ -203,7 +203,7 @@ export const pillars = [
     es: "Enviadores",
     heading: "Churches sending, and churches multiplying",
     body:
-      "We act as a clearinghouse: we filter and approve missionaries we believe are very good investments for your missionary support dollars. Nash personally screens each man and knows his work. We strive to plant a church every year, and we encourage every missionary and church we minister to to support two new missionaries every year — and to teach them to do the same.",
+      "Part of our own labor is filtering and approving missionaries, so that a church\u2019s missions giving lands on men who will last. Nash personally screens each man and knows his work. We strive to plant a church every year, and we encourage every missionary and church we minister to to support two new missionaries every year — and to teach them to do the same.",
     since: "Over 35 years in missions, scriptures and training men",
   },
 ] as const;
@@ -271,22 +271,26 @@ export const plans2026 = [
   "University classes here in Pachacámac",
 ];
 
-/** Why a church might choose to support Peruvian missionaries specifically. */
-export const whyPeru = [
+/**
+ * Why a church should put Nash and Suzanne on its missions budget. This is
+ * deliberately NOT an argument for funding a national instead of an American —
+ * they are the Americans being supported. It is an argument about reach.
+ */
+export const whySupportUs = [
   {
-    heading: "A tenth of the cost",
+    heading: "Thirty-five years in",
     body:
-      "A Peruvian man can do effective missionary work on a small fraction of what an American missionary needs each month. Many of them operate multiple works at once.",
+      "This is not a work being started. A church founded and pastored from 1991, a church and home office in Peru, and national pastors known personally in every one of the 24 departments of the country.",
   },
   {
-    heading: "Already home",
+    heading: "Your support multiplies",
     body:
-      "Indigenous missionaries are accustomed to the culture, the language and the living standards. There is no startup cost, no shipping, no fortified housing.",
+      "We do not only labor ourselves. We train Peruvian men and send them, and a Peruvian man can labor on a small fraction of what an American needs. Supporting us funds the training, the sending and the oversight — not one household.",
   },
   {
-    heading: "Known personally",
+    heading: "You will hear from us",
     body:
-      "A resident American pastor knows and approves each missionary. We know national pastors in every one of the 24 departments of Peru.",
+      "Full report letters from the field, with photographs and names, and a live presentation to your church whenever you want one. Every letter we have sent is on this site to read before you decide.",
   },
   {
     heading: "Peru sends",

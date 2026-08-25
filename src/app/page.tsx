@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { VideoFeature } from "@/components/VideoFeature";
-import { figures, pillars, site, whyPeru, works } from "@/lib/site";
+import { figures, pillars, site, whySupportUs, works } from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -34,16 +34,16 @@ export default function HomePage() {
             <p className="lede mt-7 max-w-xl">
               We are Nash and Suzanne Desent, and we have spent our lives
               putting scriptures and trained Peruvian preachers into places
-              that have neither. These are men who can reach their own people
-              for{" "}
+              that have neither. Thirty-five years in, we are still on the
+              field, and{" "}
               <strong className="font-semibold text-candle">
-                a fraction of what it costs to send an American
+                every man we train reaches people we never could
               </strong>
-              . Would your church stand with one?
+              . Would your church stand with us?
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link href="/partner" className="btn btn-candle">
-                Support a missionary
+                Stand with us
               </Link>
               <Link href="/schedule" className="btn btn-outline">
                 Have us present to your church
@@ -285,18 +285,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Peruvian missionaries. */}
+      {/* Why a church should support them. */}
       <section className="border-y border-hairline bg-cream section-pad">
         <div className="shell">
           <div className="max-w-2xl">
-            <p className="eyebrow">Why this way</p>
+            <p className="eyebrow">Why us</p>
             <h2 className="display-md mt-4">
-              Why support a Peruvian missionary
+              Why put us on your missions budget
             </h2>
             <span className="flag-rule mt-6" />
           </div>
           <ul className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2">
-            {whyPeru.map((w, i) => (
+            {whySupportUs.map((w, i) => (
               <li key={w.heading} className="flex gap-5">
                 <span className="font-serif text-[1.6rem] leading-none text-peru/35">
                   {String(i + 1).padStart(2, "0")}

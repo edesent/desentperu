@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { GiveEmbed } from "@/components/GiveEmbed";
 import { PageHero } from "@/components/PageHero";
-import { partnerChurches, site, whyPeru } from "@/lib/site";
+import { partnerChurches, site, whySupportUs } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Partner With Us",
   description:
-    "Support a Peruvian missionary, help print scriptures, or help finish the church building in Tarapoto. 100% of every gift goes to missionaries and scriptures — give whatever the Lord leads.",
+    "Support Nash and Suzanne Desent, independent Baptist missionaries in Peru, on your church’s missions budget. One gift, any amount — 100% goes to missionaries and to the scriptures.",
   alternates: { canonical: "/partner" },
 };
 
@@ -17,22 +17,26 @@ export const metadata: Metadata = {
  * choosing and it goes where the need is greatest.
  */
 const supports = [
-  "Monthly support for Peruvian missionaries and their families",
-  "Printing and distributing scriptures in country, including New Testaments in the Awajún language for the Amazon",
-  "Church construction — the temple and parsonage in Tarapoto",
+  "Nash and Suzanne on the field — the household, the travel, and the day-to-day work of the ministry",
+  "The churches we pastor and plant: Villa El Salvador, Pachacámac, and the Amazon work at Tarapoto",
+  "Printing and distributing scriptures in country, including New Testaments in the Awajún language",
+  "Training Peruvian pastors, preachers and missionaries, and supporting the men they send",
   "The travelling tent ministry and its evangelistic campaigns",
-  "Training pastors, preachers and missionaries through the university",
   "New church plants in Cacatachi, Lamas and the cities beyond them",
 ];
 
-/** From ibmperu.org — the terms a supporting church is agreeing to. */
+/**
+ * What a supporting church gets from them. Reframed from ibmperu.org's
+ * missionary standards: on a page asking for their own support, a list of terms
+ * they impose on other men reads as the wrong promise.
+ */
 const commitments = [
-  "Pastor Desent personally screens each missionary, and we know their work.",
-  "We support men who serve regardless of the income we can provide — men with a world vision.",
-  "We commit to support as long as the missionary labors in good testimony.",
-  "We expect regular updates from the field.",
-  "Support is normally a three-year term for a man with one church; every new church started lengthens it.",
-  "Our missionaries must be involved in scripture distribution.",
+  "You will get real reports — full letters from the field with photographs and names, not a postcard.",
+  "We will present to your church whenever you ask, by live video from Peru or in person when we are stateside.",
+  "100% of every monetary gift goes to the work and to the scriptures. Our home church bears the administration costs.",
+  "We labor regardless of the income we can provide, and we keep going as long as we can stand.",
+  "We are accountable to our home church, and every missionary we send is personally screened and known to us.",
+  "We are building so the work outlasts us — land secured, plans drawn, and Peruvian men trained to carry it.",
 ];
 
 export default function PartnerPage() {
@@ -40,13 +44,15 @@ export default function PartnerPage() {
     <>
       <PageHero
         eyebrow="Partner with us"
-        title={<>A tenth of the cost.<br />Ten times the reach.</>}
+        title={<>Put us on your<br />missions budget.</>}
       >
         <p>
-          A Peruvian man can do effective missionary work on a small fraction of
-          what it costs to send an American. We are already there, we already
-          know these men, and the fields are already open. Give whatever the
-          Lord lays on your church — there is no figure we are asking for.
+          We are asking your church to support us — Nash and Suzanne — on your
+          missions line, as you would any missionary family. What that support
+          reaches is a church in Lima, a work in the Amazon, scriptures coming
+          off a press in country, and the Peruvian men we are training to carry
+          it after us. Give whatever the Lord lays on your church; there is no
+          figure we are asking for.
         </p>
       </PageHero>
 
@@ -59,14 +65,14 @@ export default function PartnerPage() {
             <span className="flag-rule mt-6" />
             <div className="prose-field lede mt-7">
               <p>
-                100% of every monetary gift goes to supporting missionaries and
-                to the scriptures. We do not use funds for anything else — our
-                home church bears all administration costs.
+                100% of every monetary gift goes to the work and to the
+                scriptures. We do not use funds for anything else — our home
+                church bears all administration costs.
               </p>
               <p className="!mb-0">
                 There is nothing to choose between and no figure we are asking
-                for. Give one amount, whatever the Lord lays on your church, and
-                it goes to the work that needs it most.
+                for. Support us with one amount, whatever the Lord lays on your
+                church, and it goes to the work that needs it most.
               </p>
             </div>
           </div>
@@ -113,7 +119,7 @@ export default function PartnerPage() {
             </div>
 
             <div className="mt-10 border-t border-hairline pt-8">
-              <h3 className="display-sm">What we commit to</h3>
+              <h3 className="display-sm">What we commit to you</h3>
               <ul className="mt-5 space-y-3">
                 {commitments.map((c) => (
                   <li key={c.slice(0, 30)} className="flex gap-3.5">
@@ -139,11 +145,11 @@ export default function PartnerPage() {
         <div className="shell">
           <p className="eyebrow">The case</p>
           <h2 className="display-md mt-4">
-            Why send it through Peruvian hands
+            Why your support goes further here
           </h2>
           <span className="flag-rule mt-6" />
           <ul className="mt-12 grid gap-x-14 gap-y-10 sm:grid-cols-2">
-            {whyPeru.map((w, i) => (
+            {whySupportUs.map((w, i) => (
               <li key={w.heading} className="flex gap-5">
                 <span className="font-serif text-[1.6rem] leading-none text-candle/40">
                   {String(i + 1).padStart(2, "0")}
@@ -158,11 +164,11 @@ export default function PartnerPage() {
             ))}
           </ul>
           <p className="mt-12 max-w-3xl text-[0.95rem] leading-relaxed">
-            We act as a clearinghouse: we filter and approve missionaries we
-            believe are very good investments for your missionary support
-            dollars. Gifts are received and disbursed through{" "}
-            {site.processedBy} — the name your church will see on the receipt.
-            You can read the full standards we hold our missionaries to at{" "}
+            Part of our own labor is filtering and approving missionaries, so
+            that a church’s missions giving lands on men who will last. Gifts
+            are received and disbursed through {site.processedBy} — the name
+            your church will see on the receipt. You can read the full standards
+            we hold our missionaries to at{" "}
             <a
               href={`${site.orgSite}/our-missionaries/`}
               target="_blank"

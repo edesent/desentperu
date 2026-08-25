@@ -146,16 +146,15 @@ export default async function LetterPage({
           </h2>
           <p className="lede mx-auto mt-5 max-w-xl">
             We can present to your church live by video from Peru, or in person
-            during our September 2026 trip. And your church can stand behind a
-            Peruvian missionary for a fraction of what sending an American
-            costs.
+            during our September 2026 trip. And your church can put us on its
+            missions budget, at whatever amount the Lord leads.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href="/schedule" className="btn btn-primary">
               Schedule a presentation
             </Link>
             <Link href="/partner" className="btn btn-outline">
-              Support a missionary
+              Stand with us
             </Link>
           </div>
           <p className="mt-8 text-[0.85rem] text-muted">
