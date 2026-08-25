@@ -89,13 +89,29 @@ export default function HomePage() {
 
       {/* Who we are, briefly — the personal anchor. */}
       <section className="section-pad">
-        <div className="shell grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
+        {/* The portrait makes the left column much taller than the prose, so the
+            text is centred against it rather than stranded at the top. */}
+        <div className="shell grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:gap-20">
           <div>
             <p className="eyebrow">Who we are</p>
             <h2 className="display-md mt-4">
               Thirty-five years of seed, sowers and senders
             </h2>
             <span className="flag-rule mt-6" />
+            <figure className="m-0 mt-9">
+              <Image
+                src="/photos/nash-preaching.jpg"
+                alt="Nash Desent teaching from a music stand with both hands raised mid-sentence, wearing a striped shirt and a red striped tie, a whiteboard behind him and an acoustic guitar propped against the wall"
+                width={780}
+                height={975}
+                sizes="(min-width: 1024px) 420px, 92vw"
+                className="h-auto w-full border border-hairline"
+              />
+              <figcaption className="mt-3 text-[0.82rem] text-muted">
+                Nash teaching. Training men who will preach after us is the
+                half of the work that lasts.
+              </figcaption>
+            </figure>
           </div>
           <div className="prose-field lede">
             <p>

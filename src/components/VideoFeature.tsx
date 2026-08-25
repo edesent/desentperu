@@ -1,10 +1,18 @@
 "use client";
 
-import { useRef, useState } from "react";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 /**
- * The 2026 presentation video. Held behind a poster and a click so nothing
- * autoplays with sound, and so a pastor on cellular data chooses to spend it.
+ * The 2026 presentation video. The card is only a poster and a play button;
+ * clicking it opens the video in a lightbox over the page.
+ *
+ * Built on a native <dialog> with showModal(), which gives focus trapping and
+ * Escape-to-close for free — a hand-rolled overlay has to reimplement both and
+ * usually gets the focus part wrong. preload="none" keeps the browser from
+ * fetching the file until play() is called, so a pastor on cellular data does
+ * not pay for 8 MB just by landing on the page (verified: zero requests for
+ * promo.mp4 before the click, one after).
  */
 export function VideoFeature({
   src = "/promo.mp4",
@@ -17,42 +25,63 @@ export function VideoFeature({
   label?: string;
   duration?: string;
 }) {
-  const [started, setStarted] = useState(false);
+  const dialogRef = useRef<HTMLDialogElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const start = () => {
-    setStarted(true);
-    // The element exists on this render already; play on the next tick.
+  const open = () => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    dialog.showModal();
+    // The src is set declaratively below; load and play once it is attached.
     requestAnimationFrame(() => void videoRef.current?.play());
   };
 
-  return (
-    <figure className="group relative m-0 aspect-video w-full overflow-hidden bg-peru-deep shadow-[0_24px_60px_-24px_rgba(0,0,0,0.55)] ring-1 ring-candle/20">
-      <video
-        ref={videoRef}
-        src={started ? src : undefined}
-        poster={poster}
-        controls={started}
-        playsInline
-        preload="none"
-        className="h-full w-full object-cover"
-      >
-        <p className="p-6 text-candle">
-          Your browser cannot play this video.{" "}
-          <a href={src} className="underline">
-            Download it instead
-          </a>
-          .
-        </p>
-      </video>
+  const close = () => dialogRef.current?.close();
 
-      {!started && (
+  // Rewind on close so reopening starts at the beginning rather than mid-report,
+  // and release the scroll lock. "close" covers Escape, the button and the
+  // backdrop alike.
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const onClose = () => {
+      const video = videoRef.current;
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+      document.documentElement.style.overflow = "";
+    };
+
+    dialog.addEventListener("close", onClose);
+    return () => {
+      dialog.removeEventListener("close", onClose);
+      document.documentElement.style.overflow = "";
+    };
+  }, []);
+
+  return (
+    <>
+      <figure className="m-0">
         <button
           type="button"
-          onClick={start}
-          className="absolute inset-0 cursor-pointer"
-          aria-label={`${label} (${duration})`}
+          onClick={() => {
+            document.documentElement.style.overflow = "hidden";
+            open();
+          }}
+          aria-label={`${label} — ${duration}. Opens in a player.`}
+          className="group relative block aspect-video w-full cursor-pointer overflow-hidden bg-peru-deep shadow-[0_24px_60px_-24px_rgba(0,0,0,0.55)] ring-1 ring-candle/20"
         >
+          <Image
+            src={poster}
+            alt=""
+            width={832}
+            height={464}
+            priority
+            className="h-full w-full object-cover"
+          />
+
           {/* Light overall wash so the poster stays a photograph, with the
               weight concentrated behind the label at the bottom. */}
           <span className="absolute inset-0 bg-peru-deep/20 transition-colors group-hover:bg-peru-deep/10" />
@@ -79,7 +108,60 @@ export function VideoFeature({
             </span>
           </span>
         </button>
-      )}
-    </figure>
+      </figure>
+
+      <dialog
+        ref={dialogRef}
+        // Clicks that land on the dialog itself, not on the frame inside it,
+        // are backdrop clicks.
+        onClick={(e) => {
+          if (e.target === e.currentTarget) close();
+        }}
+        className="m-0 h-full max-h-none w-full max-w-none bg-transparent p-0 backdrop:bg-[#2a0000]/90 open:flex open:items-center open:justify-center"
+      >
+        <div
+          onClick={(e) => {
+            if (e.target === e.currentTarget) close();
+          }}
+          className="flex h-full w-full items-center justify-center p-4 sm:p-8"
+        >
+          <div className="relative w-full max-w-5xl">
+            <video
+              ref={videoRef}
+              src={src}
+              poster={poster}
+              controls
+              playsInline
+              preload="none"
+              className="aspect-video w-full bg-black shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]"
+            >
+              <p className="p-6 text-candle">
+                Your browser cannot play this video.{" "}
+                <a href={src} className="underline">
+                  Download it instead
+                </a>
+                .
+              </p>
+            </video>
+
+            <button
+              type="button"
+              onClick={close}
+              aria-label="Close the player"
+              className="absolute -top-11 right-0 flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-candle/80 transition-colors hover:text-candle sm:-top-12"
+            >
+              Close
+              <svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true">
+                <path
+                  d="M1 1l12 12M13 1L1 13"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </>
   );
 }

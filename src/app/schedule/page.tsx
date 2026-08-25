@@ -40,6 +40,10 @@ export default function SchedulePage() {
       <PageHero
         eyebrow="For pastors"
         title={<>Let us bring the field<br />into your church.</>}
+        photo={{
+          src: "/photos/tent-meeting-hands.jpg",
+          alt: "A packed gospel tent with children on white plastic chairs, many with hands raised, and a Spanish “Campaña Evangelística — Bienvenidos” banner along the far side",
+        }}
       >
         <p>
           We are on the field in Peru, so most of the year we cannot stand in
