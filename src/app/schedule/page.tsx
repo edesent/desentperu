@@ -30,7 +30,7 @@ const steps = [
   {
     n: "04",
     h: "You decide, later",
-    b: "There is no ask at the end and no pressure. If your church later wants to support a missionary, that conversation can happen on your timing.",
+    b: "There is no ask at the end and no pressure. If your church later wants to take us on, that conversation can happen on your timing.",
   },
 ];
 
