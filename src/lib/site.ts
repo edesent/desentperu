@@ -63,9 +63,9 @@ export const figures = [
   {
     value: "11",
     unit: "locations",
-    label: "In the 2026–2028 planting initiative",
+    label: "In the 2026–2028 church planting initiative throughout Peru.",
     note:
-      "From Lambayeque on the coast to Pucallpa in the jungle — some established, most still waiting on laborers.",
+      "From Lambayeque on the northern coast to Pucallpa in the eastern jungle to Tacna on the southernmost coast — We have plans for church mission bases (some land already secured) to reach surrounding areas. We are praying for laborers and funds.",
   },
 ] as const;
 
