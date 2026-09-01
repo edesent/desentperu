@@ -29,7 +29,7 @@ export function Wordmark({
             isCandle ? "text-candle/65" : "text-peru-bright"
           }`}
         >
-          Missionaries to Peru
+          Baptist Missionaries to Peru
         </span>
       </span>
     </span>
