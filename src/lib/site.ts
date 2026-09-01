@@ -56,9 +56,9 @@ export const figures = [
   {
     value: "200,000",
     unit: "people",
-    label: "Tarapoto, with no Baptist church",
+    label: "Tarapoto, with no fundamental Baptist church",
     note:
-      "The land is secured and the plans are finished. We need funds to build without stopping.",
+      "The land is secured and the plans are finished. We need funds to build without stopping in more than six locations reaching Tarapoto and surrounding cities.",
   },
   {
     value: "11",
