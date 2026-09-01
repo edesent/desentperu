@@ -28,7 +28,7 @@ export default function HomePage() {
             <h1 className="display-lg mt-5 text-candle">
               A city of 200,000 with
               <br />
-              no Baptist church.
+              no fundamental Baptist church.
             </h1>
             <span className="flag-rule mt-7" />
             <p className="lede mt-7 max-w-xl">
