@@ -34,7 +34,7 @@ const timeline = [
   },
   {
     year: "2024",
-    text: "First Baptist Church of Pachacámac is organized on January 6 as a mission church under Iglesia Bautista El Lindero Antiguo in Villa El Salvador. A ton of New Testaments is produced in the Awajún language for Amazon tribal communities.",
+    text: "First Baptist Church of Pachacámac is organized on January 6 as a mission church under Iglesia Bautista El Lindero Antiguo in Villa El Salvador. We construct our church and mission’s base of operations in 9 months. A ton of New Testaments is produced in the Awajún language for Amazon tribal communities.",
   },
   {
     year: "2026",
