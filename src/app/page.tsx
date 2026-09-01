@@ -124,11 +124,13 @@ export default function HomePage() {
               office under a local Baptist church here.
             </p>
             <p>
-              Today we labor from Villa El Salvador and Pachacámac. Nash is
-              president of Baptist International University; together we print
-              scriptures, train preachers, raise up churches, and travel with a
-              gospel tent. Suzanne carries the home, the hospitality, and the
-              children's work that most visitors remember longest.
+              Today we labor from Villa El Salvador, Pachacámac, and the Amazon
+              jungle. Nash is president of Baptist International University and
+              Independent Baptist Missions; together we print scriptures, train
+              preachers, plant churches, and help with gospel tent evangelistic
+              campaigns. Suzanne serves in many ways: trip planning,
+              hospitality, women’s ministries, and the children's work. People
+              remember her the most.
             </p>
             <p className="!mb-0">
               <Link
