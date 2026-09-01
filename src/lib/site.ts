@@ -123,7 +123,7 @@ export const works: Work[] = [
     slug: "tarapoto",
     name: "Tarapoto",
     place: "San Martín — the Amazon jungle",
-    status: "Building now · the most urgent need",
+    status: "First Baptist Church of Tarapoto building is now finished · the most urgent need is to finish parsonage.",
     summary:
       "A city of 200,000 with no Baptist church. The temple is painted; the parsonage is framed.",
     body: [
