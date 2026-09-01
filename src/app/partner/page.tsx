@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const supports = [
   "Nash and Suzanne on the field — the day to day operations, the travel, and the continuous work of the ministry",
   "The churches we pastor and plant: Villa El Salvador, Pachacámac, and the Amazon work in and around Tarapoto",
-  "Printing and distributing scriptures in country, including New Testaments in the Awajún language",
+  "Printing and distributing scriptures in country, including New Testaments in the languages of Awajún, Spanish, Quechua, etc.",
   "Training pastors, preachers and missionaries, and supporting good men in the work of the Lord",
   "The travelling tent ministry and its evangelistic campaigns",
   "New church plants in Cacatachi, Lamas and the cities beyond them",
