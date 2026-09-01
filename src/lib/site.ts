@@ -86,7 +86,7 @@ export const works: Work[] = [
     slug: "villa-el-salvador",
     name: "Landmark Baptist Church",
     place: "Villa El Salvador, Lima",
-    status: "Established · needs a larger building",
+    status: "Landmark Baptist Church is established · church needs a larger building",
     summary:
       "Our sending church in Lima, and the press where scriptures are printed. Full of children.",
     body: [
