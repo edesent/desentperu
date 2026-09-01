@@ -33,7 +33,7 @@ export default function HomePage() {
             <span className="flag-rule mt-7" />
             <p className="lede mt-7 max-w-xl">
               We are Nash and Suzanne Desent, and we have spent our lives
-              putting scriptures and trained Peruvian preachers into places
+              putting scriptures and trained preachers into places
               that have neither. Thirty-five years in, we are still on the
               field, and{" "}
               <strong className="font-semibold text-candle">
