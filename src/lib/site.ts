@@ -47,8 +47,8 @@ export const figures = [
       "A church founded and pastored in Rhode Island from 1991, and now a church, a home office and a university in Peru.",
   },
   {
-    value: "2 tons",
-    unit: "of scriptures",
+    value: "Tons",
+    unit: "of scriptures produced and distributed in country including 2 tons of",
     label: "New Testaments in Awajún",
     note:
       "Printed in country for Amazon tribal communities in 2024, and again in 2025. The brethren are asking for more.",
