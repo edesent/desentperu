@@ -42,7 +42,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/schedule" className="hover:text-white">
-                Send a message
+                Send a message via WhatsApp
               </Link>
             </li>
             <li>
