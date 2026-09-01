@@ -248,7 +248,7 @@ export const plantingSites: {
   { name: "Lambayeque", region: "Lambayeque", status: "futureWithLand" },
   { name: "Juanjuí", region: "San Martín", status: "futureNoLand" },
   { name: "Pucallpa", region: "Ucayali", status: "futureNoLand" },
-  { name: "Cañete", region: "Lima", status: "futureNoLand" },
+  { name: "Cañete", region: "Lima", status: "futureWithLand" },
   { name: "Santa Rosa", region: "—", status: "futureNoLand" },
 ];
 
