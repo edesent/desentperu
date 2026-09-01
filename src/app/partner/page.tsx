@@ -36,7 +36,7 @@ const commitments = [
   "100% of every monetary gift goes to the work and to the scriptures. Our home church bears the administration costs.",
   "We labor regardless of the income we can provide, and we keep going as long as we can stand.",
   "We are accountable to our home church, and every missionary we send is personally screened and known to us.",
-  "We are building so the work outlasts us — land secured, plans drawn, and Peruvian men trained to carry it.",
+  "We are building so the work outlasts us — land secured, plans drawn, and Baptist men trained to continue the work.",
 ];
 
 export default function PartnerPage() {
