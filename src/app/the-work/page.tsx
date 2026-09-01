@@ -90,7 +90,9 @@ export default function TheWorkPage() {
                       alt={work.photo.alt}
                       fill
                       sizes="(min-width: 1024px) 540px, 92vw"
-                      className="object-cover"
+                      className={`object-cover ${
+                        work.slug === "pachacamac" ? "object-top" : ""
+                      }`}
                     />
                   </div>
                   <figcaption className="mt-3 text-[0.82rem] text-muted">
