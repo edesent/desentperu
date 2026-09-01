@@ -307,6 +307,8 @@ export const partnerChurches = [
   "Highland Hills Baptist Church — Michigan",
   "Historic Baptist Church — North Kingstown, Rhode Island",
   "Milford Bible Baptist Church — Milford, Massachusetts",
+  "Mount Vernon Baptist Church — Howard, Ohio",
+  "Bow Baptist Church — Weathersfield Bow, Vermont",
   "Open Bible Baptist Church — Brooklyn, Connecticut",
   "Open Door Baptist Church — New Bedford, Massachusetts",
   "State Line Baptist Church — New Hampshire",
