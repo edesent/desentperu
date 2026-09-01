@@ -46,8 +46,8 @@ export default function SchedulePage() {
         }}
       >
         <p>
-          We are on the field in Peru, so most of the year we cannot stand in
-          your church. But we can join you live by video from the works
+          We are on the field in Peru, so most of the year we cannot visit in
+          person in your church. But we can join you live by video from the works
           themselves — and there is no travel cost, no lodging, and no
           honorarium expected.
         </p>
