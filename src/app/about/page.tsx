@@ -38,7 +38,7 @@ const timeline = [
   },
   {
     year: "2026",
-    text: "Jorge Rodriguez moves to Tarapoto in March. The temple exterior is painted, the parsonage steel is up, and eleven locations are mapped for the 2026–2028 planting initiative.",
+    text: "Jorge Rodriguez moves to Tarapoto in April 2026. The temple is built, the parsonage steel is up, and eleven locations are mapped for the 2026–2028 planting initiative. Missionary Jorge Rodriguez is currently conducting services in four locations. The need for laborers is great.",
   },
 ];
 
