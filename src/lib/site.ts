@@ -195,7 +195,7 @@ export const pillars = [
     es: "Sembradores",
     heading: "Training pastors, preachers and missionaries",
     body:
-      "Pastor Desent is president of Baptist International University. Though he works physically from Peru, the international work of the university continues: brethren in Liberia are training many students, schools in Peru and Chile are going forward, we have hopes of approval in Rwanda, and other countries are beginning to be involved.",
+      "Pastor Desent is president of Baptist International University. Though he works physically from Peru, the international work of the university continues: brethren in Liberia are training many students, schools in America, Peru, and Chile are going forward, we have hopes of approval in Rwanda, and other countries are beginning to be involved.",
     since: "Founded 1977",
   },
   {
