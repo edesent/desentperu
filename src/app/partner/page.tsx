@@ -17,7 +17,7 @@ export const metadata: Metadata = {
  * choosing and it goes where the need is greatest.
  */
 const supports = [
-  "Nash and Suzanne on the field — the household, the travel, and the day-to-day work of the ministry",
+  "Nash and Suzanne on the field — the day to day operations, the travel, and the continuous work of the ministry",
   "The churches we pastor and plant: Villa El Salvador, Pachacámac, and the Amazon work at Tarapoto",
   "Printing and distributing scriptures in country, including New Testaments in the Awajún language",
   "Training Peruvian pastors, preachers and missionaries, and supporting the men they send",
