@@ -285,7 +285,7 @@ export const whySupportUs = [
   {
     heading: "Your support multiplies",
     body:
-      "We do not only labor ourselves. We train Peruvian men and send them, and a Peruvian man can labor on a small fraction of what an American needs. Supporting us funds the training, the sending and the oversight — not one household.",
+      "We do not only labor ourselves. We train Peruvian men and send them, and a national man can labor on a small fraction of what an American needs. Supporting us funds the training, the sending and the oversight — not one household.",
   },
   {
     heading: "You will hear from us",
