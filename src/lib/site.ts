@@ -13,7 +13,7 @@ export const isDemo = !/(^|\.)ibmperu\.org$/.test(new URL(siteUrl).hostname);
 
 export const site = {
   name: "Nash & Suzanne Desent",
-  tagline: "Missionary Workers in Peru",
+  tagline: "Baptist Missionary Workers in Peru",
   shortName: "Desent Peru",
   description:
     "Nash and Suzanne Desent are independent Baptist missionaries in Lima, Peru — planting churches, publishing scriptures, and training and sending Peruvian preachers. Put them on your church\u2019s missions budget.",
