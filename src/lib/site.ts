@@ -127,8 +127,8 @@ export const works: Work[] = [
     summary:
       "A city of 200,000 with no Baptist church. The temple is painted; the parsonage is framed.",
     body: [
-      "The church plant in the Amazon jungle of Peru is going very well. Jorge Rodriguez is our missionary who moved to Tarapoto in March, and God opened a door for a great rental home where Jorge conducts services.",
-      "The exterior of the temple is painted and the steel structure of the parsonage is finished. Lord willing the parsonage will be completed this year so we can save on rent. The building is progressing well, and we sincerely thank all who have donated to this work.",
+      "The church plant in the Amazon jungle of Peru is going very well. Jorge Rodriguez is our missionary who moved to Tarapoto in April, and God opened a door for a great rental home where Jorge conducts services. There are three other areas also where he is holding services.",
+      "The temple is completed and the steel structure of the parsonage is finished. Lord willing the parsonage will be completed this year so we can save on rent. The building is progressing well, and we sincerely thank all who have donated to this work.",
       "We want to thank especially Michael Van Horn of the Wallace Legacy Foundation and Michael Drust of Regions Beyond Albania for their support and labor of love for this project. We also highly appreciate evangelist Barry McKee, who has labored for this work, and give special thanks to Mount Vernon Baptist Temple and Pastor Joshua Lehman for their generous gift.",
       "We are not only working to plant churches in Tarapoto, but also in the surrounding cities that have no Baptist churches.",
     ],
