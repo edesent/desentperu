@@ -70,7 +70,7 @@ export default function PartnerPage() {
                 church bears all administration costs.
               </p>
               <p className="!mb-0">
-                Any amount will give you a part in what we are doing for eternal
+                Any amount donated gives you a part in what we are doing for eternal
                 rewards. Support us with one amount, whatever the Lord lays on
                 your heart, and it goes to the work that needs it most. This will
                 add fruit to your account.
