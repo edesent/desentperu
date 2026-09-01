@@ -76,11 +76,13 @@ export default function AboutPage() {
               an American's would, and whom we know personally.
             </p>
             <p>
-              We are not building something for ourselves. In January a cardiac
-              MRI came back clear, and God used the scare to move us to get
-              things in order for the next generation. That is why the pace this
-              year is what it is: land secured, plans drawn, men trained, so the
-              work continues after us.
+              We are not building something for ourselves. We want fruit that
+              remains so that we are a profitable missionary investment for the
+              churches who partner with us. We are diligently working to plant
+              churches, train missionaries, and get the scriptures to the world.
+              We have a big vision for South America and the rest of the world.
+              We invite you to be part of this wonderful work. This work will
+              continue after us.
             </p>
             <p className="!mb-0">
               Two standing invitations. First, come visit — we have comfortable
