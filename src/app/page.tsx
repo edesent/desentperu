@@ -108,8 +108,9 @@ export default function HomePage() {
                 className="h-auto w-full border border-hairline"
               />
               <figcaption className="mt-3 text-[0.82rem] text-muted">
-                Nash teaching. Training men who will preach after us is the
-                half of the work that lasts.
+                Training men and women who will carry on the work after us is
+                the means to have fruit that remains. 1 Corinthians 3:10.
+                Reproducing laborers who will also reproduce. 2 Timothy 2:2.
               </figcaption>
             </figure>
           </div>
