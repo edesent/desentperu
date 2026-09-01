@@ -149,7 +149,7 @@ export const works: Work[] = [
       "Land for churches and a youth camp is already bought. Lamas has no Baptist church.",
     body: [
       "For 2026 we are focusing on Tarapoto — building that work up and starting other churches in the town. But twenty minutes away is Cacatachi, and another twenty minutes is Lamas. These two areas have no fundamental Baptist churches.",
-      "We have secured land for churches and for a camp there, and we are preparing laborers for the area. What we need is men who will surrender to the mission field. Pray the Lord of the harvest that he sends forth laborers.",
+      "We have secured land for churches in these two cities, and for a camp in Lamas. We are preparing laborers for these areas. What we need is men who will surrender to the mission field because there is much work to be done. Pray the Lord of the harvest that he sends forth laborers.",
       "Do you have a desire to labor in Peru? Come help us. Having a vision for the future is necessary for a missionary — we must pray, and step through the doors God opens.",
     ],
     photo: {
